@@ -15,90 +15,238 @@
 
 <header>
   <h1>CrazyGuyz ポートフォリオ</h1>
-  <p>河原電子ビジネス専門学校 ゲームクリエイター科2年 / 酒井風駕</p>
+  <p>河原電子ビジネス専門学校 ゲームクリエイター科2年<br>氏名：酒井風駕</p>
 </header>
 
 <main>
 
+<hr>
+
 <section id="top">
-  <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766541438205.png" alt="CrazyGuyz メインビジュアル" style="max-width:100%;">
+  <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766541438205.png"
+       alt="CrazyGuyz メインビジュアル">
 </section>
+
+<hr>
 
 <section id="overview">
 <h2>作品概要</h2>
+
 <p>
 <strong>タイトル：</strong>CrazyGuys（クレイジーガイズ）<br>
 <strong>ジャンル：</strong>3Dパーティーアクションゲーム<br>
 <strong>制作人数：</strong>1人<br>
 <strong>制作期間：</strong>2025年8月 ～ 2026年1月<br>
-<strong>プレイ人数：</strong>1人 ～ 4人<br>
+<strong>プレイ人数：</strong>1人 ～ 4人
+</p>
+
+<p>
+<strong>対応ハード：</strong>PC（Windows 11）<br>
+<strong>対応デバイス：</strong>
+</p>
+
+<ul>
+  <li>キーボード</li>
+  <li>Xbox 360 コントローラー（推奨）</li>
+</ul>
+
+<p>
 <strong>使用言語：</strong>C++ / HLSL
 </p>
 </section>
 
+<hr>
+
+<section id="environment">
+<h2>開発環境・使用ツール</h2>
+
+<p>
+<strong>エンジン：</strong>学内制簡易エンジン（DirectX 12）<br>
+<strong>開発環境：</strong>Visual Studio 2022
+</p>
+
+<h3>3Dモデル</h3>
+<ul>
+  <li>Unity Asset Store</li>
+  <li>3ds Max</li>
+  <li>Unity</li>
+</ul>
+
+<h3>画像制作</h3>
+<ul>
+  <li>Adobe Photoshop 2024</li>
+  <li>ChatGPT</li>
+</ul>
+
+<p>
+<strong>エフェクト：</strong>Effekseer<br>
+<strong>サウンド：</strong>AudioStock
+</p>
+
+<p>
+<strong>バージョン管理：</strong>GitHub<br>
+<strong>タスク管理：</strong>Notion
+</p>
+
+<h3>その他使用ツール</h3>
+<ul>
+  <li>Adobe Premiere Pro 2025</li>
+  <li>ChatGPT</li>
+  <li>GitHub Copilot</li>
+</ul>
+
+<p>
+<strong>GitHub URL：</strong><br>
+<a href="https://github.com/sakaifuga0807/CrazyGuys" target="_blank">
+https://github.com/sakaifuga0807/CrazyGuys
+</a>
+</p>
+</section>
+
+<hr>
+
 <section id="game">
 <h2>ゲーム内容</h2>
+
 <p>
-『<strong>CrazyGuys</strong>』は、他のプレイヤーよりも早くゴールに到達することを目的とした、
-最大4人対戦の3Dパーティーアクションゲームです。
+『<strong>CrazyGuys</strong>』は、<br>
+<strong>他のプレイヤーよりも早くゴールに到達することを目的とした、最大4人対戦の3Dアクションゲーム</strong>です。
 </p>
+
+<p>
+ステージ上には以下のようなギミックやトラップが配置されています。
+</p>
+
 <ul>
   <li>プレイヤーを弾き飛ばすギミック</li>
   <li>タイミングを見極めて進むトラップ</li>
 </ul>
+
 <p>
-操作精度と状況判断が求められるゲーム性となっています。
+これらを乗り越えるためには、<br>
+<strong>操作精度と状況判断</strong>が重要になります。
 </p>
 </section>
 
+<hr>
+
 <section id="pv">
 <h2>プレイ動画（PV）</h2>
+
 <iframe
-  width="800"
+  width="100%"
   height="450"
   src="https://www.youtube.com/embed/7-fPs30Ndn4"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
 </iframe>
+
+<p>
+<a href="https://youtu.be/7-fPs30Ndn4" target="_blank">
+YouTubeで見る
+</a>
+</p>
 </section>
+
+<hr>
 
 <section id="appeal">
-<h2>工夫点・アピールポイント</h2>
+<h2>工夫点とアピールポイント</h2>
 
-<h3>責務分離を意識したクラス設計</h3>
+<h3>1. 責務分離を意識したクラス設計</h3>
+
 <p>
-プレイヤーの「状態・挙動管理」と「入力処理」を分離して設計しています。
+プレイヤーキャラクターの実装において、「状態管理・挙動管理」と「入力処理」を分離して設計しました。
 </p>
+
+<h4>クラス構成</h4>
 <ul>
-  <li>Player：状態管理・アニメーション・当たり判定</li>
-  <li>PlayerControl：プレイヤー入力処理</li>
-  <li>AIControl：AI操作処理</li>
+  <li><strong>Player</strong>：状態遷移管理 / アニメーション制御 / 当たり判定処理</li>
+  <li><strong>PlayerControl</strong>：プレイヤー入力処理</li>
+  <li><strong>AIControl</strong>：AI操作時の入力処理</li>
 </ul>
 
-<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551544248.png"
-     alt="Playerクラス構成図" style="max-width:100%;">
-
-<h3>Jsonによるデータドリブン設計</h3>
 <p>
-ギミックやステージ配置はすべて Json ファイルで管理し、
-コード修正なしで調整できる構成にしています。
+入力処理を Player から切り離すことで、人操作と AI 操作を同一インターフェースで切り替え可能な構成を実現しています。
 </p>
+
+<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551544248.png"
+     alt="Playerクラス構成図">
+
+<hr>
+
+<h3>2. 外部ファイルを用いたパラメータ管理</h3>
+
+<p>
+ゲーム内で使用する各種設定値は <strong>Json ファイルを用いて外部管理</strong>しています。
+</p>
+
+<ul>
+  <li>プレイヤーの移動速度</li>
+  <li>ジャンプ力</li>
+  <li>各種ゲームバランス関連数値</li>
+</ul>
+
+<p>
+コードを修正せずにバランス調整が可能となり、保守性と可読性を向上させています。
+</p>
+
+<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551604036.png"
+     alt="C++実装例">
 
 <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551616722.png"
-     alt="Json定義例" style="max-width:100%;">
+     alt="Json定義例">
 
-<h3>FadeManager / SoundManager の集中管理</h3>
+<hr>
+
+<h3>3. Json によるステージオブジェクト生成（データドリブン設計）</h3>
+
 <p>
-フェード演出・サウンド再生はそれぞれ Manager クラスで一元管理し、
-シーン遷移時の不具合や処理の分散を防いでいます。
+ステージ上の全ギミックを Json ファイルから生成するデータドリブン設計を採用しています。
 </p>
 
+<pre><code>{
+  "Position": [0.0, 200.0, -500.0],
+  "Rotation": [0.0, 0.0, 0.0, 1.0],
+  "Scale": [1.0, 1.0, 1.0],
+  "Speed": 2.0,
+  "Range": 45.0
+}</code></pre>
+
+<hr>
+
+<h3>フェード演出の設計と実装（FadeManager）</h3>
+
+<p>
+画面遷移時の違和感を抑えるため、FadeManager をシングルトンとして実装しています。
+</p>
+
+<pre><code>FadeManager::GetInstance()->FadeOut(1.0f,[this]()
+{
+    ChangeState(enState_InGame);
+});
+</code></pre>
+
+<hr>
+
+<h3>5. サウンド管理の設計と実装（SoundManager）</h3>
+
+<p>
+BGM / SE を SoundManager によって一元管理し、Json から定義を読み込む設計を行っています。
+</p>
+
+<pre><code>SoundManager::Get().Play("GameStart");</code></pre>
+
 </section>
+
+<hr>
 
 <section id="future">
 <h2>今後の展望</h2>
-<h3>オフスクリーンレンダリングによる画面分割</h3>
+
+<h3>オフスクリーンレンダリングを用いた画面分割対応</h3>
+
 <p>
 各プレイヤー視点をレンダーターゲットに描画し、
 UV分割によって柔軟な画面分割マルチプレイを実現する構想です。
@@ -112,6 +260,7 @@ UV分割によって柔軟な画面分割マルチプレイを実現する構想
 <ul>
   <li><a href="#top">トップ</a></li>
   <li><a href="#overview">作品概要</a></li>
+  <li><a href="#environment">開発環境</a></li>
   <li><a href="#game">ゲーム内容</a></li>
   <li><a href="#pv">PV</a></li>
   <li><a href="#appeal">アピールポイント</a></li>
