@@ -2,210 +2,177 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>CrazyGuyz ポートフォリオ | 酒井風駕</title>
-<meta name="keywords" content="ゲーム,ポートフォリオ,3Dアクション,C++,DirectX12">
-<meta name="description" content="3Dパーティーアクションゲーム『CrazyGuyz』就活用ポートフォリオ">
+<title>CrazyGuyzポートフォリオ | 酒井風駕</title>
+<meta name="keywords" content="ゲームプログラマー,ポートフォリオ,C++,DirectX12,就活,酒井風駕">
+<meta name="description" content="河原電子ビジネス専門学校ゲームクリエイター科2年 酒井風駕の作品ポートフォリオ。3Dパーティーアクションゲーム『CrazyGuys』の技術解説と紹介。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="index.css">
+<style>
+    body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+    #outer { display: flex; justify-content: center; background-color: #f4f4f4; padding: 20px; }
+    #inner { max-width: 1200px; width: 100%; background: #fff; display: grid; grid-template-columns: 1fr 250px; gap: 20px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    header, footer { grid-column: 1 / -1; }
+    header h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+    main { min-width: 0; } /* オーバーフロー対策 */
+    main img { max-width: 100%; height: auto; display: block; margin: 10px 0; border: 1px solid #ddd; }
+    h2 { background: #eee; padding: 10px; border-left: 5px solid #333; margin-top: 40px; }
+    h3 { border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
+    pre { background: #2d2d2d; color: #ccc; padding: 15px; overflow-x: auto; border-radius: 5px; }
+    code { font-family: Consolas, monospace; }
+    aside .title { font-weight: bold; background: #333; color: #fff; padding: 10px; text-align: center; }
+    aside ul { list-style: none; padding: 0; }
+    aside ul li { border-bottom: 1px solid #eee; }
+    aside ul li a { display: block; padding: 10px; text-decoration: none; color: #333; }
+    aside ul li a:hover { background: #f9f9f9; color: #007bff; }
+    footer { text-align: center; padding: 20px; border-top: 1px solid #ddd; margin-top: 20px; }
+    #pagetop { margin-bottom: 10px; }
+    
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+        #inner { grid-template-columns: 1fr; }
+        aside { order: -1; } /* スマホではメニューを上に */
+    }
+</style>
 </head>
-
 <body>
 <div id="outer">
 <div id="inner">
 
 <header>
-  <h1>CrazyGuyz ポートフォリオ</h1>
-  <p>河原電子ビジネス専門学校 ゲームクリエイター科2年<br>氏名：酒井風駕</p>
+    <h1>CrazyGuyzポートフォリオ</h1>
+    <p>河原電子ビジネス専門学校ゲームクリエイター科2年 | 氏名：酒井風駕</p>
 </header>
 
 <main>
+    <p>
+        <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766541438205.png" alt="CrazyGuys メインビジュアル">
+    </p>
 
-<hr>
+    <h2 id="overview">作品概要</h2>
+    <p>
+        <strong>タイトル</strong>：CrazyGuys（クレイジーガイズ）<br>
+        <strong>ジャンル</strong>：3Dパーティーアクションゲーム<br>
+        <strong>制作人数</strong>：1人<br>
+        <strong>制作期間</strong>：2025年8月 ～ 2026年1月<br>
+        <strong>プレイ人数</strong>：1人 ～ 4人
+    </p>
+    <p>
+        <strong>対応ハード</strong>：PC（Windows 11）<br>
+        <strong>対応デバイス</strong>：
+        <ul>
+            <li>キーボード</li>
+            <li>Xbox 360 コントローラー（推奨）</li>
+        </ul>
+        <strong>使用言語</strong>：C++ / HLSL
+    </p>
 
-<section id="top">
-  <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766541438205.png"
-       alt="CrazyGuyz メインビジュアル">
-</section>
+    <h2 id="tools">開発環境・使用ツール</h2>
+    <p>
+        <strong>エンジン</strong>：学内制簡易エンジン（DirectX 12）<br>
+        <strong>開発環境</strong>：Visual Studio 2022
+    </p>
 
-<hr>
+    <h3>3Dモデル</h3>
+    <ul>
+        <li>Unity Asset Store</li>
+        <li>3ds Max</li>
+        <li>Unity</li>
+    </ul>
 
-<section id="overview">
-<h2>作品概要</h2>
+    <h3>画像制作</h3>
+    <ul>
+        <li>Adobe Photoshop 2024</li>
+        <li>ChatGPT</li>
+    </ul>
 
-<p>
-<strong>タイトル：</strong>CrazyGuys（クレイジーガイズ）<br>
-<strong>ジャンル：</strong>3Dパーティーアクションゲーム<br>
-<strong>制作人数：</strong>1人<br>
-<strong>制作期間：</strong>2025年8月 ～ 2026年1月<br>
-<strong>プレイ人数：</strong>1人 ～ 4人
-</p>
+    <p>
+        <strong>エフェクト</strong>：Effekseer<br>
+        <strong>サウンド</strong>：AudioStock<br>
+        <strong>バージョン管理</strong>：GitHub<br>
+        <strong>タスク管理</strong>：Notion
+    </p>
 
-<p>
-<strong>対応ハード：</strong>PC（Windows 11）<br>
-<strong>対応デバイス：</strong>
-</p>
+    <h3>その他使用ツール</h3>
+    <ul>
+        <li>Adobe Premiere Pro 2025</li>
+        <li>ChatGPT</li>
+        <li>GitHub Copilot</li>
+    </ul>
 
-<ul>
-  <li>キーボード</li>
-  <li>Xbox 360 コントローラー（推奨）</li>
-</ul>
+    <p>
+        <strong>GitHub URL</strong>：<br>
+        <a href="https://github.com/sakaifuga0807/CrazyGuys" target="_blank">https://github.com/sakaifuga0807/CrazyGuys</a>
+    </p>
 
-<p>
-<strong>使用言語：</strong>C++ / HLSL
-</p>
-</section>
+    <h2 id="content">ゲーム内容</h2>
+    <p>
+        『<strong>CrazyGuys</strong>』は、<strong>他のプレイヤーよりも早くゴールに到達することを目的とした、最大4人対戦の3Dアクションゲーム</strong>です。
+    </p>
+    <p>ステージ上には以下のようなギミックやトラップが配置されています。</p>
+    <ul>
+        <li>プレイヤーを弾き飛ばすギミック</li>
+        <li>タイミングを見極めて進むトラップ</li>
+    </ul>
+    <p>これらを乗り越えるためには、<strong>操作精度と状況判断</strong>が重要になります。</p>
 
-<hr>
+    <h2 id="video">プレイ動画（PV）</h2>
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/7-fPs30Ndn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>URL: <a href="https://youtu.be/7-fPs30Ndn4" target="_blank">https://youtu.be/7-fPs30Ndn4</a></p>
 
-<section id="environment">
-<h2>開発環境・使用ツール</h2>
+    <h2 id="appeal">工夫点とアピールポイント</h2>
 
-<p>
-<strong>エンジン：</strong>学内制簡易エンジン（DirectX 12）<br>
-<strong>開発環境：</strong>Visual Studio 2022
-</p>
+    <h3>1. 責務分離を意識したクラス設計</h3>
+    <p>プレイヤーキャラクターの実装において、「状態管理・挙動管理」と「入力処理」を分離して設計しました。</p>
+    <h4>クラス構成</h4>
+    <ul>
+        <li><strong>Player</strong>：状態遷移管理、アニメーション制御、当たり判定処理</li>
+        <li><strong>PlayerControl</strong>：プレイヤー入力処理</li>
+        <li><strong>AIControl</strong>：AI操作時の入力処理</li>
+    </ul>
+    <p>
+        入力処理を Player から切り離すことで、人操作と AI 操作を同一インターフェースで切り替え可能な構成を実現しています。<br>
+        これにより、将来的な <strong>画面分割によるマルチプレイ対応や AI 切り替え</strong>にも拡張しやすい設計となっています。
+    </p>
+    <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551544248.png" alt="Player構成図">
 
-<h3>3Dモデル</h3>
-<ul>
-  <li>Unity Asset Store</li>
-  <li>3ds Max</li>
-  <li>Unity</li>
-</ul>
+    <h3>2. 外部ファイルを用いたパラメータ管理</h3>
+    <p>ゲーム内で使用する各種設定値は <strong>Json ファイルを用いて外部管理</strong>しています。</p>
+    <h4>管理している主なパラメータ</h4>
+    <ul>
+        <li>プレイヤーの移動速度</li>
+        <li>ジャンプ力</li>
+        <li>各種ゲームバランス関連数値</li>
+    </ul>
+    <p>
+        数値を外部ファイルで管理することで、<strong>コードを修正せずにゲームバランスの調整が可能</strong>となり、試行錯誤を効率的に行えるようになりました。また、マジックナンバーの発生を防ぎ、可読性・保守性の向上にも繋がっています。
+    </p>
+    <h4>C++ 側の実装例</h4>
+    <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551604036.png" alt="C++側の実装例">
+    <h4>Json ファイル例</h4>
+    <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551616722.png" alt="Jsonファイル例">
 
-<h3>画像制作</h3>
-<ul>
-  <li>Adobe Photoshop 2024</li>
-  <li>ChatGPT</li>
-</ul>
+    <h3>3. Json によるステージオブジェクト生成（データドリブン設計）</h3>
+    <p>
+        本作品では、ステージ上に配置される <strong>全てのギミック・オブジェクトを Json ファイルから生成</strong>する仕組みを実装しています。<br>
+        ハンマー、シーソー、斧、回転床などのギミックは、コードに直接配置情報や数値を記述せず、<strong>外部 Json ファイルを用いたデータドリブン設計</strong>で管理しています。
+    </p>
+    <p>これにより、以下のメリットを実現しています。</p>
+    <ul>
+        <li>ステージ調整の柔軟性向上</li>
+        <li>実装とデータ定義の分離</li>
+        <li>ステージ追加・調整コストの削減</li>
+    </ul>
 
-<p>
-<strong>エフェクト：</strong>Effekseer<br>
-<strong>サウンド：</strong>AudioStock
-</p>
+    <h4>実装内容</h4>
+    <p>各ギミックごとに設定用 Json ファイルを用意し、以下の情報を定義しています。</p>
+    <ul>
+        <li>位置（Position）</li>
+        <li>回転（Rotation）</li>
+        <li>大きさ（Scale）</li>
+        <li>ギミック固有のパラメータ（速度・可動範囲など）</li>
+    </ul>
 
-<p>
-<strong>バージョン管理：</strong>GitHub<br>
-<strong>タスク管理：</strong>Notion
-</p>
-
-<h3>その他使用ツール</h3>
-<ul>
-  <li>Adobe Premiere Pro 2025</li>
-  <li>ChatGPT</li>
-  <li>GitHub Copilot</li>
-</ul>
-
-<p>
-<strong>GitHub URL：</strong><br>
-<a href="https://github.com/sakaifuga0807/CrazyGuys" target="_blank">
-https://github.com/sakaifuga0807/CrazyGuys
-</a>
-</p>
-</section>
-
-<hr>
-
-<section id="game">
-<h2>ゲーム内容</h2>
-
-<p>
-『<strong>CrazyGuys</strong>』は、<br>
-<strong>他のプレイヤーよりも早くゴールに到達することを目的とした、最大4人対戦の3Dアクションゲーム</strong>です。
-</p>
-
-<p>
-ステージ上には以下のようなギミックやトラップが配置されています。
-</p>
-
-<ul>
-  <li>プレイヤーを弾き飛ばすギミック</li>
-  <li>タイミングを見極めて進むトラップ</li>
-</ul>
-
-<p>
-これらを乗り越えるためには、<br>
-<strong>操作精度と状況判断</strong>が重要になります。
-</p>
-</section>
-
-<hr>
-
-<section id="pv">
-<h2>プレイ動画（PV）</h2>
-
-<iframe
-  width="100%"
-  height="450"
-  src="https://www.youtube.com/embed/7-fPs30Ndn4"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
-<p>
-<a href="https://youtu.be/7-fPs30Ndn4" target="_blank">
-YouTubeで見る
-</a>
-</p>
-</section>
-
-<hr>
-
-<section id="appeal">
-<h2>工夫点とアピールポイント</h2>
-
-<h3>1. 責務分離を意識したクラス設計</h3>
-
-<p>
-プレイヤーキャラクターの実装において、「状態管理・挙動管理」と「入力処理」を分離して設計しました。
-</p>
-
-<h4>クラス構成</h4>
-<ul>
-  <li><strong>Player</strong>：状態遷移管理 / アニメーション制御 / 当たり判定処理</li>
-  <li><strong>PlayerControl</strong>：プレイヤー入力処理</li>
-  <li><strong>AIControl</strong>：AI操作時の入力処理</li>
-</ul>
-
-<p>
-入力処理を Player から切り離すことで、人操作と AI 操作を同一インターフェースで切り替え可能な構成を実現しています。
-</p>
-
-<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551544248.png"
-     alt="Playerクラス構成図">
-
-<hr>
-
-<h3>2. 外部ファイルを用いたパラメータ管理</h3>
-
-<p>
-ゲーム内で使用する各種設定値は <strong>Json ファイルを用いて外部管理</strong>しています。
-</p>
-
-<ul>
-  <li>プレイヤーの移動速度</li>
-  <li>ジャンプ力</li>
-  <li>各種ゲームバランス関連数値</li>
-</ul>
-
-<p>
-コードを修正せずにバランス調整が可能となり、保守性と可読性を向上させています。
-</p>
-
-<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551604036.png"
-     alt="C++実装例">
-
-<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551616722.png"
-     alt="Json定義例">
-
-<hr>
-
-<h3>3. Json によるステージオブジェクト生成（データドリブン設計）</h3>
-
-<p>
-ステージ上の全ギミックを Json ファイルから生成するデータドリブン設計を採用しています。
-</p>
-
+    <h4>Json 定義例</h4>
 <pre><code>{
   "Position": [0.0, 200.0, -500.0],
   "Rotation": [0.0, 0.0, 0.0, 1.0],
@@ -214,68 +181,117 @@ YouTubeで見る
   "Range": 45.0
 }</code></pre>
 
-<hr>
+    <h3>4. フェード演出の設計と実装（FadeManager）</h3>
+    <p>本作では画面遷移時の視覚的な違和感を抑えるため、フェード演出を以下のタイミングで使用しています。</p>
+    <ul>
+        <li>タイトル → インゲーム遷移</li>
+        <li>プレイヤーのリスポーン時</li>
+        <li>リザルト画面への遷移</li>
+    </ul>
+    <p>これらを <strong>FadeManager として一元管理</strong> し、シングルトンパターンで実装しました。</p>
 
-<h3>フェード演出の設計と実装（FadeManager）</h3>
+    <h4>シングルトンパターン採用の理由</h4>
+    <p>
+        フェード処理は「どのシーン・どのオブジェクトからでも呼ばれる可能性がある」という性質を持っています。<br>
+        そのため、以下の点を重視し <code>FadeManager</code> をシングルトンとして実装しました。
+    </p>
+    <ul>
+        <li>インスタンスの重複生成を防ぐ</li>
+        <li>フェード状態を全体で共有する</li>
+        <li>呼び出し側が生成を意識しなくてよい</li>
+    </ul>
 
-<p>
-画面遷移時の違和感を抑えるため、FadeManager をシングルトンとして実装しています。
-</p>
-
+    <h4>ラムダ式を用いたフェード完了後処理</h4>
+    <p>フェード終了後に実行する処理は、<strong>ラムダ式として外部から渡せる設計</strong> にしています。</p>
 <pre><code>FadeManager::GetInstance()->FadeOut(1.0f,[this]()
-{
-    ChangeState(enState_InGame);
-});
-</code></pre>
+    {
+        ChangeState(enState_InGame);
+    }
+);</code></pre>
 
-<hr>
+    <h3>5. サウンド管理の設計と実装（SoundManager）</h3>
+    <p>
+        本作では、ゲーム内で使用する <strong>BGM・SE を SoundManager クラスで一元管理</strong>しています。<br>
+        従来のように、各クラスが直接サウンドの読み込み・再生を行う方式では、再生処理の分散やシーン遷移時の不具合、調整コストの問題がありました。<br>
+        これらを解決するため、<strong>SoundManager による集中管理方式</strong>を採用しています。
+    </p>
 
-<h3>5. サウンド管理の設計と実装（SoundManager）</h3>
+    <h4>サウンド管理の設計方針</h4>
+    <ul>
+        <li>サウンド制御の責務を 1 クラスに集約</li>
+        <li>BGM と SE を明確に役割分離</li>
+        <li>呼び出し側は「音を鳴らす意図」のみ記述する</li>
+    </ul>
 
-<p>
-BGM / SE を SoundManager によって一元管理し、Json から定義を読み込む設計を行っています。
-</p>
+    <h4>BGM / SE の役割分離</h4>
+    <p><strong>BGM</strong></p>
+    <ul>
+        <li>常に <strong>1 種類のみ再生</strong></li>
+        <li>新しい BGM 再生時に既存 BGM を停止・破棄</li>
+        <li>シーン遷移を跨いだ安全な管理が可能</li>
+    </ul>
+    <p><strong>SE</strong></p>
+    <ul>
+        <li><strong>複数同時再生に対応</strong></li>
+        <li>再生ごとに SoundSource を生成</li>
+        <li>ゲーム中の細かな演出に対応可能</li>
+    </ul>
+    <p>この設計により、<strong>BGM の多重再生防止</strong>と<strong>SE の柔軟な演出</strong>を両立しています。</p>
 
+    <h4>Json によるサウンド定義の外部管理</h4>
+    <p>使用するサウンドは Json ファイルで定義し、ゲーム起動時に一括で読み込んでいます。</p>
+    <ul>
+        <li>サウンド ID、サウンド名</li>
+        <li>ファイルパス、音量</li>
+        <li>ループ有無（BGM / SE 判定）</li>
+    </ul>
+
+    <h4>呼び出し側の簡略化</h4>
+    <p>SoundManager 導入後は、以下のように <strong>名前指定のみで再生可能</strong>になっています。</p>
 <pre><code>SoundManager::Get().Play("GameStart");</code></pre>
 
-</section>
-
-<hr>
-
-<section id="future">
-<h2>今後の展望</h2>
-
-<h3>オフスクリーンレンダリングを用いた画面分割対応</h3>
-
-<p>
-各プレイヤー視点をレンダーターゲットに描画し、
-UV分割によって柔軟な画面分割マルチプレイを実現する構想です。
-</p>
-</section>
-
+    <h2 id="future">今後の展望</h2>
+    <h3>オフスクリーンレンダリングを用いた画面分割対応</h3>
+    <p>
+        本作では、最大4人までのマルチプレイを想定した設計を行っていますが、今後の拡張として <strong>オフスクリーンレンダリングを用いた画面分割描画</strong> に取り組みたいと考えています。
+    </p>
+    <p>画面分割マルチプレイでは、プレイヤーごとに異なるカメラ視点を持つ必要があり、通常の描画手法では描画管理が複雑になりがちです。</p>
+    <p>そこで、各プレイヤーの視点を以下の構成にすることで解決を目指します。</p>
+    <ul>
+        <li>それぞれ <strong>オフスクリーンレンダリング（レンダーターゲット）</strong> に描画</li>
+        <li>描画結果を <strong>1枚の画面用ポリゴンに貼り付け、UV を分割して表示</strong></li>
+    </ul>
+    <p>
+        これにより、画面分割ロジックの単純化、描画処理と表示処理の分離、分割数（2～4人）に応じた柔軟なレイアウト変更を実現できると考えています。
+    </p>
 </main>
 
 <aside>
-<div class="title">MENU</div>
-<ul>
-  <li><a href="#top">トップ</a></li>
-  <li><a href="#overview">作品概要</a></li>
-  <li><a href="#environment">開発環境</a></li>
-  <li><a href="#game">ゲーム内容</a></li>
-  <li><a href="#pv">PV</a></li>
-  <li><a href="#appeal">アピールポイント</a></li>
-  <li><a href="#future">今後の展望</a></li>
-</ul>
+    <div class="title">Contents</div>
+    <ul>
+        <li><a href="#overview">作品概要</a></li>
+        <li><a href="#tools">開発環境・使用ツール</a></li>
+        <li><a href="#content">ゲーム内容</a></li>
+        <li><a href="#video">プレイ動画（PV）</a></li>
+        <li><a href="#appeal">工夫点とアピールポイント</a></li>
+        <li><a href="#future">今後の展望</a></li>
+    </ul>
+    <div class="title">Links</div>
+    <ul>
+        <li><a href="https://github.com/sakaifuga0807/CrazyGuys" target="_blank">GitHub Repository</a></li>
+    </ul>
 </aside>
 
 <footer>
-<div id="pagetop">
-<a href="#outer">▲ Page Top</a>
-</div>
-© 2026 酒井風駕
+    <div id="pagetop">
+        <a href="#outer">
+            <svg viewBox="0 0 24 24" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8z" fill="#999"/>
+            </svg>
+        </a>
+    </div>
+    © 2026 酒井風駕 All Rights Reserved.
 </footer>
 
-</div>
-</div>
-</body>
+</div> </div> </body>
 </html>
