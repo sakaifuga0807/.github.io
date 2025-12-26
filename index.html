@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>CrazyGuyz ポートフォリオ | 酒井風駕</title>
+<meta name="keywords" content="ゲーム,ポートフォリオ,3Dアクション,C++,DirectX12">
+<meta name="description" content="3Dパーティーアクションゲーム『CrazyGuyz』就活用ポートフォリオ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div id="outer">
+<div id="inner">
+
+<header>
+  <h1>CrazyGuyz ポートフォリオ</h1>
+  <p>河原電子ビジネス専門学校 ゲームクリエイター科2年 / 酒井風駕</p>
+</header>
+
+<main>
+
+<section id="top">
+  <img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766541438205.png" alt="CrazyGuyz メインビジュアル" style="max-width:100%;">
+</section>
+
+<section id="overview">
+<h2>作品概要</h2>
+<p>
+<strong>タイトル：</strong>CrazyGuys（クレイジーガイズ）<br>
+<strong>ジャンル：</strong>3Dパーティーアクションゲーム<br>
+<strong>制作人数：</strong>1人<br>
+<strong>制作期間：</strong>2025年8月 ～ 2026年1月<br>
+<strong>プレイ人数：</strong>1人 ～ 4人<br>
+<strong>使用言語：</strong>C++ / HLSL
+</p>
+</section>
+
+<section id="game">
+<h2>ゲーム内容</h2>
+<p>
+『<strong>CrazyGuys</strong>』は、他のプレイヤーよりも早くゴールに到達することを目的とした、
+最大4人対戦の3Dパーティーアクションゲームです。
+</p>
+<ul>
+  <li>プレイヤーを弾き飛ばすギミック</li>
+  <li>タイミングを見極めて進むトラップ</li>
+</ul>
+<p>
+操作精度と状況判断が求められるゲーム性となっています。
+</p>
+</section>
+
+<section id="pv">
+<h2>プレイ動画（PV）</h2>
+<iframe
+  width="800"
+  height="450"
+  src="https://www.youtube.com/embed/7-fPs30Ndn4"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+</section>
+
+<section id="appeal">
+<h2>工夫点・アピールポイント</h2>
+
+<h3>責務分離を意識したクラス設計</h3>
+<p>
+プレイヤーの「状態・挙動管理」と「入力処理」を分離して設計しています。
+</p>
+<ul>
+  <li>Player：状態管理・アニメーション・当たり判定</li>
+  <li>PlayerControl：プレイヤー入力処理</li>
+  <li>AIControl：AI操作処理</li>
+</ul>
+
+<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551544248.png"
+     alt="Playerクラス構成図" style="max-width:100%;">
+
+<h3>Jsonによるデータドリブン設計</h3>
+<p>
+ギミックやステージ配置はすべて Json ファイルで管理し、
+コード修正なしで調整できる構成にしています。
+</p>
+
+<img src="image/GC2_11_酒井風駕_就活作品ポートフォリオ/1766551616722.png"
+     alt="Json定義例" style="max-width:100%;">
+
+<h3>FadeManager / SoundManager の集中管理</h3>
+<p>
+フェード演出・サウンド再生はそれぞれ Manager クラスで一元管理し、
+シーン遷移時の不具合や処理の分散を防いでいます。
+</p>
+
+</section>
+
+<section id="future">
+<h2>今後の展望</h2>
+<h3>オフスクリーンレンダリングによる画面分割</h3>
+<p>
+各プレイヤー視点をレンダーターゲットに描画し、
+UV分割によって柔軟な画面分割マルチプレイを実現する構想です。
+</p>
+</section>
+
+</main>
+
+<aside>
+<div class="title">MENU</div>
+<ul>
+  <li><a href="#top">トップ</a></li>
+  <li><a href="#overview">作品概要</a></li>
+  <li><a href="#game">ゲーム内容</a></li>
+  <li><a href="#pv">PV</a></li>
+  <li><a href="#appeal">アピールポイント</a></li>
+  <li><a href="#future">今後の展望</a></li>
+</ul>
+</aside>
+
+<footer>
+<div id="pagetop">
+<a href="#outer">▲ Page Top</a>
+</div>
+© 2026 酒井風駕
+</footer>
+
+</div>
+</div>
+</body>
+</html>
